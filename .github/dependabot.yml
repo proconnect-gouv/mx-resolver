@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    cooldown:
+      default-days: 7
+    labels:
+      - dependencies
+    schedule:
+      interval: weekly
+    versioning-strategy: increase
+  - package-ecosystem: github-actions
+    directory: /
+    labels:
+      - dependencies
+    schedule:
+      interval: weekly
